@@ -9,16 +9,10 @@
 
     <context:property-placeholder location="App.properties"/>
 
-    <bean id="idAnimal" class="Pet.Cat"></bean>
-    <bean id="people" class="People.Superman"></bean>
 
-
-    <bean id="empl"
-          class="DependencyInjection.Employee">
-        <constructor-arg ref="idAnimal"/>
-
-        <property name="name" value="${employee.surname}"/>
-        <property name="age" value="${employee.age}"/>
+    <bean id="pet"
+          class="Pet.Dog"
+          scope="singleton">
 
     </bean>
 </beans>
