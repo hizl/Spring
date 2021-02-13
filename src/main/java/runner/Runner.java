@@ -11,7 +11,7 @@ public class Runner {
 
         Human bean = context.getBean("people", Human.class);
 
-        Animal bean2 = context.getBean("myID", Animal.class);
+        Animal bean2 = context.getBean("idAnimal", Animal.class);
 
         bean.say();
         bean2.say();

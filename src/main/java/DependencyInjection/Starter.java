@@ -19,6 +19,11 @@ public class Starter {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("myApplicationContext.xml");
         Employee bean = context.getBean("empl", Employee.class);
 
+
+
+        System.out.println(bean.getAge());
+        System.out.println(bean.getName());
+
         bean.couldYourPet();
 
         context.close();
